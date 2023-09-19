@@ -182,9 +182,9 @@ codepath = os.path.dirname(os.path.abspath(__file__))
 now = datetime.now()
 formatted_time = now.strftime("%Y%m%d%H%M")
 src_filename = "input.csv"
-src_filename_path =os.path.join(codepath, src_filename)
-result_filename_csv = os.path.join(codepath, f"{formatted_time}.csv")   
-result_filename_excel= os.path.join(codepath, f"{formatted_time}.xlsx")
+src_filename_path =os.path.join(codepath, "resutl",src_filename)
+result_filename_csv = os.path.join(codepath, "resutl",f"{formatted_time}.csv")   
+result_filename_excel= os.path.join(codepath,"resutl", f"{formatted_time}.xlsx")
 
 creat_result_file(src_filename_path,result_filename_csv,result_filename_excel,formatted_time)
 # check_url_sort_respone("0-limit.com")
