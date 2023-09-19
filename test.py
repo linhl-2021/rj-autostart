@@ -144,25 +144,25 @@ def creat_result_file(src_filename,result_filename_csv,result_filename_excel,for
                     print("sleep 60seconds")
                     time.sleep(60)
     
-    data = pd.read_csv(result_filename_csv, encoding='utf-8',error_bad_lines=False)
+    #data = pd.read_csv(result_filename_csv, encoding='utf-8',error_bad_lines=False)
     #data = pd.read_csv(result_filename_csv, encoding='utf-8')
-    writer = pd.ExcelWriter(result_filename_excel, engine="xlsxwriter")
+    #writer = pd.ExcelWriter(result_filename_excel, engine="xlsxwriter")
 
-    data.to_excel(writer, 'ok', header=True, index=False)
+    #data.to_excel(writer, 'ok', header=True, index=False)
 
-    workbook  = writer.book
+    #workbook  = writer.book
 
-    worksheet = writer.sheets['ok']
+    #worksheet = writer.sheets['ok']
 
     # 垂直对齐方式
     # 水平对齐方式
     # 自动换行
 
-    content_format = workbook.add_format({
-        'valign': 'vcenter',
-        'align': 'center',
-        'text_wrap': True
-    }) 
+    #content_format = workbook.add_format({
+    #    'valign': 'vcenter',
+    #    'align': 'center',
+    #    'text_wrap': True
+    #}) 
 
     # worksheet.set_column("A:A",50, content_format)
     # worksheet.set_column("B:B",45, content_format)
@@ -174,8 +174,8 @@ def creat_result_file(src_filename,result_filename_csv,result_filename_excel,for
     # 设置所有行高
     # worksheet.set_default_row(82)
 
-    writer.save()
-    writer.close()
+    #writer.save()
+    #writer.close()
 
 
 codepath = os.path.dirname(os.path.abspath(__file__))
