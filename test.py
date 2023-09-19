@@ -144,8 +144,8 @@ def creat_result_file(src_filename,result_filename_csv,result_filename_excel,for
                     print("sleep 60seconds")
                     time.sleep(60)
     
-    data = pd.read_csv(result_filename_csv, encoding='utf-8',error_bad_lines=False)
-
+    #data = pd.read_csv(result_filename_csv, encoding='utf-8',error_bad_lines=False)
+    data = pd.read_csv(result_filename_csv, encoding='utf-8')
     writer = pd.ExcelWriter(result_filename_excel, engine="xlsxwriter")
 
     data.to_excel(writer, 'ok', header=True, index=False)
