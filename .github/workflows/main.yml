@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install requests
-
+        pip install bs4
     - name: Run script
       run: python test.py # 替换为你的脚本路径和名称
 
