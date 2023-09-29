@@ -1,0 +1,4 @@
+5555:
+6666:
+6666:bash update2.sh /home/release/src/config/config-211.ini appid /home/release/update/appid_back/app_signature_image_20220807.1404_with_lib_R3.zip 
+777:bash update2.sh /home/release/src/config/config-211.ini appid /home/release/update/appid_back/app_signature_image_20220807.1404_with_lib_R3.zip 
